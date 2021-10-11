@@ -53,6 +53,7 @@
   -o-background-size: cover;
   background-size: cover;
   height: 729px;
+  position: relative;
 }
 
 .mega-div {
@@ -90,4 +91,47 @@ opacity: 1;
   color: #221F20;
   text-transform: uppercase;
   opacity: 1;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+
+.mega-explore {  
+  text-align: center;
+  font: normal normal bold 14px/18px Josefin Sans;
+  letter-spacing: 2.1px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  opacity: 1;  
+  position: absolute;
+  bottom: 0;
+
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+.mega-explore:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
 }
