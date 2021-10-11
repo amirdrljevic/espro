@@ -1,0 +1,64 @@
+<header class="blog-header py-2">
+  <div class="row flex-nowrap justify-content-between align-items-center">
+    <div class="col-12 text-center">
+      <a class="blog-header-logo" href="#">FREE SHIPPING ON ALL U.S. ORDERS $49+</a>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light ">
+  <!--  Show this only on mobile to medium screens  -->
+    <%= link_to image_tag("ESPRO Logo.svg", width: "100"), root_path, class: "navbar-brand d-lg-none"%>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <!--  Use flexbox utility classes to change how the child elements are justified  -->
+    <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">SHOP</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">OUR STORY</a>
+        </li>
+      </ul>        
+  <!--   Show this only lg screens and up   -->
+      <%= link_to image_tag("ESPRO Logo.svg", width: "100"), root_path, class: "navbar-brand"%>
+          
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">BREW GUIDES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">BLOG</a>
+        </li>
+        <li class="nav-item">
+          <%= link_to image_tag("search-line.svg"), '#', class: "nav-link-icon"%>
+        </li>
+        <li class="nav-item">
+          <%= link_to image_tag("My Account icon.svg"), '#', class: "nav-link-icon"%>
+        </li>
+        <li class="nav-item">
+          <%= link_to image_tag("Shopping bag icon.svg"), '#', class: "nav-link-icon"%>
+        </li>
+        <li class="nav-item nav-counter">
+          <a class="nav-link-counter" href="#">0</a>
+        </li>            
+      </ul>
+    </div>
+  </nav>
+  </div>
+
+
+  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark hero-image">
+    <div class="col-md-12 px-0 mega-div">
+      <p class="mega-title">BREW ANYWHERE. BE ANYWHERE.</p>
+      <p class="lead my-3 mega-subtitle" >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo.</p>
+      <button type="button" class="mega-button">POUR ON THE GO</button>
+    </div>
+  </div>  
+
+  <main class="container">
