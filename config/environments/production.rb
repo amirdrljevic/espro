@@ -121,4 +121,5 @@ Rails.application.configure do
   # Store uploaded files on Amazon AWS.
   config.active_storage.service = :amazon
   config.action_controller.asset_host = "//#{ENV['FOG_DIRECTORY']}.s3.amazonaws.com"
+  config.assets.compile = true
 end
